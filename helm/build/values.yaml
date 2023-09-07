@@ -1,0 +1,15 @@
+app:
+  name: test-poi-map-app
+  namespace: test
+  cluster: .apps.rosa-cvtl6.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-xchange/test-frontend
+  org: rhdh-xchange
+  name: test-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: test/poi-map-app
+  tag: latest
